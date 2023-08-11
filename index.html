@@ -6,7 +6,7 @@
     <title>Welcome to my dom</title>
     <link rel="stylesheet" href="./styles/style.css">
     <style>
-        li {
+     .fruits-container   li {
             color: tomato;
         }
         #fruits-title{
@@ -32,11 +32,12 @@
         <ul>
 
         </section>
-      <section>
-        <h1 id="fruits-title">fruits I like</h1>
+      <section class="fruits-container">
+        <h1 id="fruits-title" class=" some-class random-class blue-bg" >fruits I like</h1>
         <li>apple</li>
         <li>banana</li>
         <li>carrot</li>
+        <!-- \n means new line -->
     </ul>
       </section>
       <section>
@@ -48,6 +49,7 @@
     </main>
     <script src="./js/dom.js"></script>
     <script>
+        // option 1
     const liCollection = document.getElementsByTagName('li');
     // console.log(liCollection);
     for (const li of liCollection) {
@@ -57,12 +59,19 @@
     for(const h1 of allHeadings){
         // console.log(h1.innerText);
     }
+    // option 3
     const Places = document.getElementsByClassName('important-places');
     for(const place of Places) {
         console.log(place.innerText);
     }
+    // option 2
     const fruitTitle = document.getElementById('fruits-title');
     fruitTitle.innerText = 'fruits changed by JS'
+    // option 4 and 5 is querySelector
+    const someLi = document.querySelectorAll('.fruits-container li')
+    for(const li of someLi){
+        console.log(li.innerText);
+    }
     </script>
   </body>
 </html>
