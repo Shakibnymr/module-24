@@ -40,7 +40,7 @@
         <!-- \n means new line -->
     </ul>
       </section>
-      <section>
+      <section id="places-container" class="large-text">
         <h1 id="Places-title">Places I like to visit</h1>
         <li class="important-places">sundarban</li>
         <li class="important-places">bandorbon</li>
@@ -48,6 +48,7 @@
       </section>
     </main>
     <script src="./js/dom.js"></script>
+    <script src="./js/styleinjs.js"></script>
     <script>
         // option 1
     const liCollection = document.getElementsByTagName('li');
@@ -62,7 +63,7 @@
     // option 3
     const Places = document.getElementsByClassName('important-places');
     for(const place of Places) {
-        console.log(place.innerText);
+        // console.log(place.innerText);
     }
     // option 2
     const fruitTitle = document.getElementById('fruits-title');
@@ -70,7 +71,7 @@
     // option 4 and 5 is querySelector
     const someLi = document.querySelectorAll('.fruits-container li')
     for(const li of someLi){
-        console.log(li.innerText);
+        // console.log(li.innerText);
     }
     </script>
   </body>
