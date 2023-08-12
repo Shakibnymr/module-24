@@ -22,7 +22,7 @@
         <h1>Welcome to my Dom</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque a odit culpa numquam facilis voluptate dolorum nobis recusandae impedit fugit, tenetur fugiat iure architecto? Consequatur non eos id vitae nobis.</p>
     </header>
-    <main>
+    <main id="main-content">
     <section>    <h1>My Awesome Dom de baba</h1>
         <ul>
             <li>Jalali set</li>
@@ -42,7 +42,7 @@
       </section>
       <section id="places-container" class="large-text">
         <h1 id="Places-title">Places I like to visit</h1>
-       <ul>
+       <ul id="places-list">
         <li class="important-places">sundarban</li>
         <li class="important-places">bandorbon</li>
         <li >shalbon</li>
@@ -50,8 +50,11 @@
        </ul>
       </section>
     </main>
+    
+    <script src="./js/append.js"></script>
     <script src="./js/dom.js"></script>
     <script src="./js/styleinjs.js"></script>
+  
     <script>
         // option 1
     const liCollection = document.getElementsByTagName('li');
